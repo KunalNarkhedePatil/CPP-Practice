@@ -1,0 +1,4 @@
+if(swaped==false)
+        // {
+        //     break;
+        // }
