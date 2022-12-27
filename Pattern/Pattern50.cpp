@@ -1,4 +1,19 @@
-
+/*
+Enter the number
+5
+-------------------------------
+*                 * 
+* *             * * 
+* * *         * * * 
+* * * *     * * * * 
+* * * * * * * * * * 
+* * * * * * * * * * 
+* * * *     * * * * 
+* * *         * * * 
+* *             * * 
+*                 * 
+--------------------------------
+*/
 #include <iostream>
 using namespace std;
 void DisplayPattern(int Rows)
