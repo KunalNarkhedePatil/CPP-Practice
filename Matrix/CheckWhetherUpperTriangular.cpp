@@ -13,14 +13,14 @@ int main()
             cin>>Arr[i][j];
         }
     }
-    int Upper=1;
+    int Upper=0;
     for(int i=0;i<3;i++)
     {
         for(int j=0;j<3;j++)
         {
             if((i>j&& (Arr[i][j]!=0)))
             {
-                Upper=0;
+                Upper=1;
                 break;
             }
         }

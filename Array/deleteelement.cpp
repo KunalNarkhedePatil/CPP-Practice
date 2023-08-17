@@ -10,7 +10,6 @@ void deleteelement(int Arr[],int ipos,int size)
 
 void printArray(int Arr[],int n)
 {
-    
     for(int i=0;i<n;i++)
     {
         cout<<Arr[i]<<" ";

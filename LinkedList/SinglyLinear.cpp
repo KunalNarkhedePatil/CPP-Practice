@@ -50,6 +50,7 @@ public:
     void RevrseLLRecursion(PNODE first);
     void OtherSolRevLL();
     void DeleteNthNodeFromLast(int no);
+    void DeleteValueNode(int val);
     int GetNthNodeFromLast(int no);
     void Sort0and1and2();
     void Display();
@@ -636,6 +637,26 @@ void SinglyLinear::Demo(int iNo)
     }
     DeleteAtPos(count);
 }
+void SinglyLinear::DeleteValueNode(int data)
+{
+    if(this->first==NULL)
+    {
+        cout<<"LL is empty\n";
+        return;
+    }
+    PNODE temp=this->first;
+    int count=1;
+    while(temp!=NULL)
+    {
+        if(temp->data==data)
+        {
+            DeleteAtPos(count);
+            break;
+        }
+        temp=temp->next;
+        count++;
+    }
+}
 void SinglyLinear::Sort0and1and2()
 {
     PNODE temp=this->first;
@@ -679,11 +700,11 @@ void SinglyLinear::Sort0and1and2()
 int main()
 {
     SinglyLinear *sobj = new SinglyLinear();
-    sobj->InsertFirst(0);
-    sobj->InsertFirst(1);
-    sobj->InsertFirst(2);
-    sobj->InsertFirst(0);
-    sobj->InsertFirst(1);
+    sobj->InsertFirst(10);
+    sobj->InsertFirst(20);
+    sobj->InsertFirst(30);
+    sobj->InsertFirst(40);
+    sobj->InsertFirst(50);
     // sobj->InsertLast(100);
     // sobj->InsertAtPos(25, 3);
 
@@ -708,7 +729,7 @@ int main()
 
     sobj->DisplayAdditionOfDigit();
     cout<<endl;
-
+    
     sobj->DisplayReverseDigit();
     cout<<endl;
 
@@ -734,7 +755,9 @@ int main()
     //sobj->DeleteNthNodeFromLast(2);
     //cout<<sobj->GetNthNodeFromLast(2)<<endl;
     //sobj->Demo(3);
-    sobj->Sort0and1and2();
+    //sobj->Sort0and1and2();
+    sobj->Display();
+    sobj->DeleteValueNode(50);
     sobj->Display();
 
     cout << "Number of node in the linked list are " << sobj->Count() << endl;

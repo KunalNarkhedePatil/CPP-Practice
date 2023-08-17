@@ -8,6 +8,7 @@ void insert(int Arr[],int size,int ipos,int iNo)
         {
             Arr[i]=iNo;
             break;
+            
         }
         Arr[i]=Arr[i-1];
     }

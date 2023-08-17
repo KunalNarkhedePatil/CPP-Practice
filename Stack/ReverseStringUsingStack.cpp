@@ -87,7 +87,6 @@ void Stack::ReverseString(char Str[],char *Brr)
         j++;
     }
     Brr[j]='\0';
-    
 }
 int main()
 {

@@ -1,6 +1,6 @@
 /*
 Enter the number of rows
-5
+4
 -----------------
 D 
 C D 

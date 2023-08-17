@@ -9,7 +9,7 @@ class Stack
    int *Arr;
 
    public:
-
+   
    Stack();
    void Push(char ch);
    char Pop();
